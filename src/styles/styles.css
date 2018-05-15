@@ -1,0 +1,15 @@
+body {
+overflow: scroll;
+background: #1b222c;
+overflow-x:hidden;
+font-family: 'Roboto';
+}
+
+.table-fixed tbody {
+  height: 230px;
+  overflow-y: auto;
+  width: 100%;
+}
+.dp-calendars-container {
+	z-index: 1000;
+}

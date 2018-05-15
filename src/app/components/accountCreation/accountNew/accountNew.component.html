@@ -1,0 +1,84 @@
+<div class="container" > 
+    <form [formGroup]="myForm" (ngSubmit)="generateNewAccountToken(myForm.value)">
+         <div class="step3Container">
+            <div class="row step2ContainerRow">
+                 <div class="col s6 m6 l3">
+                    <p class="btnFooterName">Principal Id</p>               
+                 </div>
+                 <div class="col s7 m8 l6">
+                    <input id="principal" type="text" placeholder="enter the principal id" formControlName ="principalid" class="text-item-color">               
+
+                 </div>
+            </div>
+            <div class="row step2ContainerRow">
+                 <div class="col s6 m6 l3">
+                    <p class="btnFooterName">Select Contract Type</p>               
+                 </div>
+
+                 <div>
+                      <div class="col s6 m6 l6" >
+                            <ngx-treeview 
+                                [config]="config"
+                                [items]="items" 
+                                (selectedChange)="values = $event"
+                                (click) = "selectContractTypeNode(values)">
+                            </ngx-treeview>
+
+                        </div>      
+                    </div>
+            </div> 
+        </div>
+        <div  *ngIf = "(responseError$ | async)" id="modal1">
+              <div  *ngIf = "!(model$ | async)" class="modal modal-window-style">
+                    <div class="modal-content">
+                      <p>{{ status }}</p>
+                    </div>
+                    <div  class="modal-footer modal-window-footer-style">
+                      <a  class="modal-action modal-close waves-effect waves-green btn-flat" style="color:white;"(click)= 'modalclose()'>OK</a>
+                    </div>
+              </div>
+        </div>
+        <div class="row step2ContainerRow">
+             <div class="col s6 m5 l5 push-l8 push-l3">
+                <button type="submit" data-target="modal1"class="waves-effect waves-light btn hover" value="CONFIRM"> CONFIRM</button>
+             </div>
+             <div class="col s6 m5 l7 push-l5">
+                <button class="waves-effect waves-light btn hover cancelbutton" (click)=" resetForm() " value="CANCEL">CANCEL
+                </button> 
+             </div>
+        </div>         
+    </form>
+</div>
+
+    <!-- <div *ngIf="accounttoken"  >
+        <div class="stepContainer">
+            <div class="row step2ContainerRow">
+                <div class="col l4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" style="width: 136px;height: 117px;margin-top: 1%;">
+                </div>
+                <div class="col l8">
+                        <textarea id="token" class="btnFooterName newaccount-textarea">{{ accounttoken }}</textarea>
+                        <button class="copy-icon" data-clipboard-action="copy" data-clipboard-target="token" (click)= " copyToClipboard()">
+                        <i class="fa fa-clone " aria-hidden="true"></i>
+                        </button>
+                 </div>
+             </div>
+        </div>
+    </div> -->
+    <div *ngIf="accounttoken"  >
+        <div class="stepContainer">
+            <div class="row step2ContainerRow">
+                <div class="col l4">
+                    <qrcode [qrdata]=" accounttoken " [size]="150" [level]="'Q'" style="width: 136px;height: 117px;margin-top: 1%;" > 
+                    </qrcode>
+                </div>
+                <div class="col l8">
+                        <textarea id="token" class="btnFooterName newaccount-textarea">{{ accounttoken }}</textarea>
+                        <button class="copy-icon" (click)= " copyToClipboard()" ngxClipboard  [cbContent]=" accounttoken">
+                        <i class="fa fa-clone " aria-hidden="true"></i>
+                        <p class="text-item-color" style="font-size: 9px;">click to copy</p>
+                        </button>
+                 </div>
+            </div>
+        </div>
+    </div>

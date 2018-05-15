@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="Right-nav-details" *ngIf ="isNodeDetailsVisible$ | async">
+    <div class="Right-panel-alignment">
+      <div class="detail"> Details
+        <a style="font-size: 10px;">Edit</a>
+        <span>
+          <i class="fa fa-times cross" (click) = "hideNodeDetails($event)" ></i>
+        </span>
+      </div>
+      <div *ngIf= "currentNode$ | async">
+        <div>
+          <div class="node-style"> Name of the Node:
+            <span class="NodeDetails"> {{(currentNode$ | async)?.name}}</span>
+          </div>
+        </div>
+        <div>
+          <div class="node-style">Type of the Node:
+          <span class="NodeDetails"> {{(currentNode$ | async)?.label}}</span>
+        </div>
+      </div>
+<!-- 
+<<<<<<< HEAD
+      <div class="node-style" >Associated Classes:
+      </div>
+      <div class="col s12 m12 l12 push-l1 search-view-block">
+        <div *ngFor="let node of (searchResult$ | async)">
+          <div class="col m3 searc-view-button" *ngIf="node.label === 'class'">
+          <div class="btnNodeTxt">
+            <span class= "lg-class"></span>{{node.name}}
+=======
+      </div>
+
+=======
+>>>>>>> 37e860b01ba081ba9305a8738bd332fa69f99beb
+      <div class="node-style" >Associated Classes:
+      </div>
+      <div class="col s12 m12 l12 push-l1 search-view-block">
+        <div *ngFor="let node of (searchResult$ | async)">
+          <div class="col m3 searc-view-button" *ngIf="node.label === 'class'">
+          <div class="btnNodeTxt">
+            <span class= "lg-class"></span>{{node.name}}
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <span class="node-style"> Associated Assets:</span>
+      <div class="col s12 m12 l12 push-l1 search-view-block">
+        <div *ngFor="let node of (searchResult$ | async)">
+          <div class="col m3 searc-view-button"  *ngIf="node.label === 'asset'">
+            <div class="btnNodeTxt">
+              <span class= "lg-asset"></span>{{node.name}}
+            </div>
+>>>>>>> c7b64ef31d9a3349f72b315a6d6b3b53f09ff4f1
+          </div>
+        </div>
+<<<<<<< HEAD
+        </div>
+      </div>
+
+      <span class="node-style"> Associated Assets:</span>
+      <div class="col s12 m12 l12 push-l1 search-view-block">
+        <div *ngFor="let node of (searchResult$ | async)">
+          <div class="col m3 searc-view-button"  *ngIf="node.label === 'asset'">
+            <div class="btnNodeTxt">
+              <span class= "lg-asset"></span>{{node.name}}
+            </div>
+          </div>
+        </div>
+=======
+>>>>>>> 37e860b01ba081ba9305a8738bd332fa69f99beb
+      </div> -->
+    </div>
+  </div>
+</div>

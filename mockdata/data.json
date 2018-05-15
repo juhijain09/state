@@ -1,0 +1,1221 @@
+{
+  "login": {
+    "status": "success",
+    "result": {
+      "userid": "mfguseroem@gmail.com"
+    }
+  },
+  "assetSearch": {
+    "status": "success",
+    "result": [
+      {
+        "maxConcurrentAssetSession": "4",
+        "maxDataItem": "2",
+        "apikey": "123435",
+        "authToken": "852ac534-0ddc-4897-9cff-150614cdd07d",
+        "name": "ContractDemo",
+        "guid": "0_4f86aa1e-66a6-41f5-821c-38aaf425e2b1",
+        "maxConcurrentApiSession": "4",
+        "label": "contractType"
+      },
+      {
+        "maxConcurrentAssetSession": "4",
+        "maxDataItem": "2",
+        "apikey": "123435",
+        "authToken": "852ac534-0ddc-4897-9cff-150614cdd07d",
+        "name": "Admin unit test",
+        "guid": "0_4f86aa1e-66a6-41f5-821c-38aaf425e2b1",
+        "maxConcurrentApiSession": "4",
+        "label": "adminUnit"
+      }
+    ],
+    "pageOffset": "1"
+  },
+  "expend": {
+    "status": "success",
+    "result": {
+      "nodes": {
+        "list": [
+          {
+            "child": {
+              "name": "TEST44",
+              "guid": "0_ac9bfe7d-76cc-41ef-9fba-1e79879265c7",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "JCBindiaLG_data_items"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_ac9bfe7d-76cc-41ef-9fba-1e79879265c7",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "TEST44",
+              "guid": "0_ac9bfe7d-76cc-41ef-9fba-1e79879265c7",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "JCBindiaLG_data_items"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_ac9bfe7d-76cc-41ef-9fba-1e79879265c7",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "REST3",
+              "guid": "0_618baa90-f6d8-4b46-9401-f1329b17aa27",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "samplefordemo"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_618baa90-f6d8-4b46-9401-f1329b17aa27",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "REST3",
+              "guid": "0_618baa90-f6d8-4b46-9401-f1329b17aa27",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "samplefordemo"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_618baa90-f6d8-4b46-9401-f1329b17aa27",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "TESTR5",
+              "guid": "0_e0199b0e-574e-497d-85d0-aeca92555fe6",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "JCBindiaLG_data_items"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_e0199b0e-574e-497d-85d0-aeca92555fe6",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "TESTR5",
+              "guid": "0_e0199b0e-574e-497d-85d0-aeca92555fe6",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "JCBindiaLG_data_items"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_e0199b0e-574e-497d-85d0-aeca92555fe6",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "test34",
+              "guid": "0_9c5a99ae-9e10-4e22-8c8b-57fd25aebbf3",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "sample"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_9c5a99ae-9e10-4e22-8c8b-57fd25aebbf3",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "test34",
+              "guid": "0_9c5a99ae-9e10-4e22-8c8b-57fd25aebbf3",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "sample"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_9c5a99ae-9e10-4e22-8c8b-57fd25aebbf3",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "ff",
+              "guid": "0_c644ae31-a6a8-4ae6-b473-491261b9d943",
+              "label": "org",
+              "parentlabel": "Org",
+              "type": [
+                "JCBindiaLG_classes"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_c644ae31-a6a8-4ae6-b473-491261b9d943",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "ff",
+              "guid": "0_c644ae31-a6a8-4ae6-b473-491261b9d943",
+              "label": "org",
+              "parentlabel": "Org",
+              "type": [
+                "JCBindiaLG_classes"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_c644ae31-a6a8-4ae6-b473-491261b9d943",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "dhdh",
+              "guid": "0_a0bdd86a-7d3c-40e1-bde3-c700bfb9ba9a",
+              "label": "org",
+              "parentlabel": "Org",
+              "type": [
+                "JCBindiaLG_classes"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_a0bdd86a-7d3c-40e1-bde3-c700bfb9ba9a",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "dhdh",
+              "guid": "0_a0bdd86a-7d3c-40e1-bde3-c700bfb9ba9a",
+              "label": "org",
+              "parentlabel": "Org",
+              "type": [
+                "JCBindiaLG_classes"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_a0bdd86a-7d3c-40e1-bde3-c700bfb9ba9a",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "test3",
+              "guid": "0_2c0ffe18-bef6-461f-a5cb-428db27ac033",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "JCBindiaLG_data_items"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_2c0ffe18-bef6-461f-a5cb-428db27ac033",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "test3",
+              "guid": "0_2c0ffe18-bef6-461f-a5cb-428db27ac033",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "JCBindiaLG_data_items"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_2c0ffe18-bef6-461f-a5cb-428db27ac033",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "test1",
+              "guid": "0_eceb7edd-b54c-4b14-b8c6-71a84a5ae3fa",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "JCBindiaLG_events"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_eceb7edd-b54c-4b14-b8c6-71a84a5ae3fa",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "test1",
+              "guid": "0_eceb7edd-b54c-4b14-b8c6-71a84a5ae3fa",
+              "label": "org",
+              "parentlabel": "org",
+              "type": [
+                "JCBindiaLG_events"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_eceb7edd-b54c-4b14-b8c6-71a84a5ae3fa",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "FSV",
+              "guid": "0_2fd2aa7f-9b10-45c0-a170-3c46085e2e72",
+              "label": "org",
+              "parentlabel": "Org",
+              "type": [
+                "JCBindiaLG_classes"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_2fd2aa7f-9b10-45c0-a170-3c46085e2e72",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "FSV",
+              "guid": "0_2fd2aa7f-9b10-45c0-a170-3c46085e2e72",
+              "label": "org",
+              "parentlabel": "Org",
+              "type": [
+                "JCBindiaLG_classes"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_2fd2aa7f-9b10-45c0-a170-3c46085e2e72",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "sd",
+              "guid": "0_4d1a1cd9-8d1e-4458-82b6-c88e3ed53c23",
+              "label": "org",
+              "parentlabel": "Org",
+              "type": [
+                "JCBindiaLG_classes"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_4d1a1cd9-8d1e-4458-82b6-c88e3ed53c23",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "sd",
+              "guid": "0_4d1a1cd9-8d1e-4458-82b6-c88e3ed53c23",
+              "label": "org",
+              "parentlabel": "Org",
+              "type": [
+                "JCBindiaLG_classes"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_4d1a1cd9-8d1e-4458-82b6-c88e3ed53c23",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "yry",
+              "guid": "0_90b9f274-7c7e-4602-a857-c64a07640e10",
+              "label": "org",
+              "parentlabel": "Org",
+              "type": [
+                "samplefordemo"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_90b9f274-7c7e-4602-a857-c64a07640e10",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "yry",
+              "guid": "0_90b9f274-7c7e-4602-a857-c64a07640e10",
+              "label": "org",
+              "parentlabel": "Org",
+              "type": [
+                "samplefordemo"
+              ]
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_90b9f274-7c7e-4602-a857-c64a07640e10",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "serialNumber": "VINDIVYAJYOTI2017LG2",
+              "registrationDate": 1513581194629,
+              "name": "VINDIVYAJYOTI2017LG2",
+              "guid": "0_2531f5fa-a193-4d06-8bc9-5b7edd5287ff",
+              "location": "Bangalore",
+              "label": "asset",
+              "activationDate": 1513251080551,
+              "type": []
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_2531f5fa-a193-4d06-8bc9-5b7edd5287ff",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "serialNumber": "VINDIVYAJYOTI2017LG2",
+              "registrationDate": 1513581194629,
+              "name": "VINDIVYAJYOTI2017LG2",
+              "guid": "0_2531f5fa-a193-4d06-8bc9-5b7edd5287ff",
+              "location": "Bangalore",
+              "label": "asset",
+              "activationDate": 1513251080551,
+              "type": []
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "belongs",
+              "target": "0_2531f5fa-a193-4d06-8bc9-5b7edd5287ff",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "serialNumber": "VINDIVYAJYOTI2017LG1",
+              "registrationDate": 1513581194555,
+              "name": "VINDIVYAJYOTI2017LG1",
+              "guid": "0_261e97a0-75b2-4f96-bb9e-f9ce2545610b",
+              "location": "Bangalore",
+              "label": "asset",
+              "activationDate": 1513251080448,
+              "type": []
+            },
+            "link": {
+              "source": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+              "relation": "has",
+              "target": "0_261e97a0-75b2-4f96-bb9e-f9ce2545610b",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          }
+        ]
+      },
+      "pageOffset": 25
+    },
+    "pageOffset": "-1"
+  },
+  "expend1": {
+    "status": "success",
+    "result": {
+      "nodes": {
+        "list": [
+          {
+            "child": {
+              "view": "",
+              "endDate": 1507541973903,
+              "authToken": "",
+              "name": "JCBindiaLG1_WiproAdmin",
+              "guid": "0_aa25fd27-b86b-49e8-ae3a-57384085a116",
+              "control": "",
+              "label": "contract",
+              "type": [],
+              "startDate": 1499765973903
+            },
+            "link": {
+              "source": "0_58e1278d-fe62-43cf-b0ce-30e05e38689c",
+              "relation": "has",
+              "target": "0_aa25fd27-b86b-49e8-ae3a-57384085a116",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "JCB_OEMContract1",
+              "guid": "0_1b2074f8-5f66-4f6e-8dd3-1d016e3cffc1",
+              "label": "termService",
+              "type": []
+            },
+            "link": {
+              "source": "0_58e1278d-fe62-43cf-b0ce-30e05e38689c",
+              "relation": "has",
+              "target": "0_1b2074f8-5f66-4f6e-8dd3-1d016e3cffc1",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "principalGuid": "pr-100111",
+              "name": "clas1",
+              "guid": "clas-1001",
+              "label": "class",
+              "type": [
+                "ipei",
+                "sdaeee",
+                "JCBindiaLG_ORGFINAL",
+                "CARMELAORGLICENSE",
+                "ConnectedWorker_company",
+                "customer",
+                "wipro_dataitem",
+                "LGLiteMetricProductClass",
+                "modelclas1",
+                "JCBGateway"
+              ]
+            },
+            "link": {
+              "source": "0_58e1278d-fe62-43cf-b0ce-30e05e38689c",
+              "relation": "isderived",
+              "target": "clas-1001",
+              "direction": "IN",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "JCB_OEMContract1",
+              "guid": "0_96f87d91-c852-497d-9e63-923b3b314d69",
+              "label": "termAction",
+              "type": []
+            },
+            "link": {
+              "source": "0_58e1278d-fe62-43cf-b0ce-30e05e38689c",
+              "relation": "has",
+              "target": "0_96f87d91-c852-497d-9e63-923b3b314d69",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "JCB_OEMContract1",
+              "guid": "0_4c770cc3-1850-4d97-80b9-f7bac8f848c2",
+              "label": "termActionType",
+              "type": []
+            },
+            "link": {
+              "source": "0_58e1278d-fe62-43cf-b0ce-30e05e38689c",
+              "relation": "has",
+              "target": "0_4c770cc3-1850-4d97-80b9-f7bac8f848c2",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "JCB_OEMContract1",
+              "guid": "0_5705e793-bb51-4911-a67d-5b1804c3d706",
+              "label": "termEvent",
+              "type": []
+            },
+            "link": {
+              "source": "0_58e1278d-fe62-43cf-b0ce-30e05e38689c",
+              "relation": "has",
+              "target": "0_5705e793-bb51-4911-a67d-5b1804c3d706",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "JCB_OEMContract1",
+              "guid": "0_690b466c-16a6-457d-bbff-f6d482629d90",
+              "label": "termEventType",
+              "type": []
+            },
+            "link": {
+              "source": "0_58e1278d-fe62-43cf-b0ce-30e05e38689c",
+              "relation": "has",
+              "target": "0_690b466c-16a6-457d-bbff-f6d482629d90",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "apikey": "123435",
+              "apiKey": "",
+              "name": "wiprolookingglass_contracttype",
+              "guid": "ctt-1001",
+              "label": "contractType",
+              "type": []
+            },
+            "link": {
+              "source": "0_58e1278d-fe62-43cf-b0ce-30e05e38689c",
+              "relation": "is",
+              "target": "ctt-1001",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          },
+          {
+            "child": {
+              "name": "JCB_OEMContract1",
+              "guid": "0_c842f86b-2088-4dde-b87b-782514728005",
+              "label": "termData",
+              "type": []
+            },
+            "link": {
+              "source": "0_58e1278d-fe62-43cf-b0ce-30e05e38689c",
+              "relation": "has",
+              "target": "0_c842f86b-2088-4dde-b87b-782514728005",
+              "direction": "OUT",
+              "relationatt": {}
+            }
+          }
+        ]
+      },
+      "pageOffset": 9
+    },
+    "pageOffset": "-1"
+  },
+  "getParent": {
+    "status": "success",
+    "result": {
+      "class": [
+        {
+          "name": "JCBindiaLG_classes",
+          "guid": "0_c99343de-47a6-4c34-954c-f22645b8171b"
+        }
+      ],
+      "org": [
+        {
+          "name": "JCBindiaLG_org",
+          "guid": "0_8aa5c2d3-a382-467d-8def-4cd30075d809"
+        }
+      ]
+    }
+  },
+  "getChildClass": {
+    "status": "success",
+    "result": {
+      "parent": {
+        "principalGuid": "0_f8d8f232-fab4-47d9-abb1-eaf1590d6fac",
+        "name": "JCBindiaLG_classes",
+        "guid": "0_c99343de-47a6-4c34-954c-f22645b8171b",
+        "label": "class",
+        "type": [
+          "df",
+          "global_data_item",
+          "JCBindiaLG_events",
+          "JCBindiaLG_product",
+          "JCBindiaLG_data_items",
+          "JCBindiaLG_class_org"
+        ]
+      },
+      "nodes": [
+        {
+          "authToken": "-469166054",
+          "name": "JCBindiaLG_events",
+          "guid": "0_ca80938e-9a3a-42e4-93cd-41ccb82e6c65",
+          "label": "class",
+          "type": [
+            "kk098",
+            "Testt11",
+            "Testt22"
+          ]
+        },
+        {
+          "authToken": "641858595",
+          "name": "JCBindiaLG_class_org",
+          "guid": "0_d1f35c17-2f39-4491-b82b-bb9f5b25aae6",
+          "label": "class",
+          "type": [
+            "06septORGsub",
+            "06septORGsub",
+            "06septORG",
+            "SaravanaClass",
+            "JCBindiaLG_company"
+          ]
+        },
+        {
+          "authToken": "1576461507",
+          "name": "JCBindiaLG_data_items",
+          "guid": "0_ceb083ce-266f-4047-a019-4db0efcb1a38",
+          "label": "class",
+          "type": [
+            "NewPClass"
+          ]
+        },
+        {
+          "authToken": "1496378599",
+          "name": "JCBindiaLG_product",
+          "guid": "0_9f1051f3-38e6-4bc5-b305-f2ce8a486eaf",
+          "label": "class",
+          "type": [
+            "CustomerOrg",
+            "DealerOrg",
+            "BackHoe"
+          ]
+        },
+        {
+          "name": "df",
+          "guid": "0_131b6fed-5488-44f6-bbd9-2d4dfc379ee8",
+          "label": "productclass",
+          "type": []
+        }
+      ]
+    },
+    "pageOffset": "-1"
+  },
+  "createOrg": {
+    "$parentId": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+    "name": "",
+    "parentlabel": "org",
+    "$classIds": [],
+    "type": "Organisation",
+    "guid": "0_90b9f274-7c7e-4602-a857-c64a07640e10"
+  },
+  "createClassNode": {
+    "status": "success",
+    "result": {
+      "domainClassGuid": "0_c99343de-47a6-4c34-954c-f22645b8171b",
+      "parentLabel": "class",
+      "name": "samplefordemo",
+      "guid": "0_af18b2f2-980d-4813-89a4-3312ee541327"
+    },
+    "pageOffset": "-1"
+  },
+  "createModelClassNode": {
+    "status": "success",
+    "result": {
+      "domainClassGuid": "0_c99343de-47a6-4c34-954c-f22645b8171b",
+      "parentLabel": "class",
+      "name": "fghf",
+      "guid": "0_01010d22-abd4-46f6-af52-e5054645bda7"
+    },
+    "pageOffset": "-1"
+  },
+  "creationLicenseTerm": {
+    "status": "success",
+    "result": {
+      "maxDataItem": "1",
+      "apiKey": "123435",
+      "ctDerivedClassId": "0_c99343de-47a6-4c34-954c-f22645b8171b",
+      "associatedAppId": "LicenseApp",
+      "authToken": "1f056725-0c52-4b16-9960-46b4aaa308ea",
+      "name": "Demo",
+      "maxConcurrentAPISessions": "2",
+      "guid": "0_aad59038-684a-4b5d-981f-cadbe5947908",
+      "parentContractTypeGuid": "0_4f86aa1e-66a6-41f5-821c-38aaf425e2b1",
+      "maxConcurrentAssetSessions": "3"
+    },
+    "pageOffset": "-1"
+  },
+  "createAssetLicense": {
+    "status": "success"
+  },
+  "createContractType": {
+    "status": "success",
+    "result": {
+      "apiKey": "123435",
+      "ctDerivedClassId": "clas-1001",
+      "associatedAppId": "AssetDashboard",
+      "authToken": "e5b29554-8d52-4f6c-a585-61091207d9d7",
+      "name": "CTAssetsDashboard_JenkinsSush01",
+      "guid": "0_c3f0161d-07df-4aa1-afd5-9716e66deebc",
+      "parentContractTypeGuid": "ctt-1001"
+    },
+    "pageOffset": "-1"
+  },
+  "getContractTypeData": {
+    "status": "success",
+    "result": [
+      {
+        "name": "ContractDemo",
+        "authToken": "852ac534-0ddc-4897-9cff-150614cdd07d",
+        "guid": "0_4f86aa1e-66a6-41f5-821c-38aaf425e2b1"
+      }
+    ]
+  },
+  "getOrgAssets": {
+    "status": "success",
+    "result": {
+      "parent": {
+        "name": "JCBindiaLG_org",
+        "guid": "0_8aa5c2d3-a382-467d-8def-4cd30075d809",
+        "label": "org",
+        "type": [
+          "company"
+        ]
+      },
+      "nodes": [
+        {
+          "name": "main_orgCr",
+          "guid": "0_c4369b75-1e7a-45c3-a83a-9a3a358792e8",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "JCBindiaLG_classes"
+          ]
+        },
+        {
+          "serialNumber": "VINDIVYAJYOTI2017LG2",
+          "registrationDate": 1513581194629,
+          "name": "VINDIVYAJYOTI2017LG2",
+          "guid": "0_2531f5fa-a193-4d06-8bc9-5b7edd5287ff",
+          "location": "Bangalore",
+          "label": "asset",
+          "activationDate": 1513251080551,
+          "type": []
+        },
+        {
+          "name": "yry",
+          "guid": "0_90b9f274-7c7e-4602-a857-c64a07640e10",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "samplefordemo"
+          ]
+        },
+        {
+          "name": "TEST44",
+          "guid": "0_ac9bfe7d-76cc-41ef-9fba-1e79879265c7",
+          "label": "org",
+          "parentlabel": "org",
+          "type": [
+            "JCBindiaLG_data_items"
+          ]
+        },
+        {
+          "name": "GIUF",
+          "guid": "0_8babd2d6-4416-4456-9595-50b867007cad",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "JCBindiaLG_class_org"
+          ]
+        },
+        {
+          "name": "sd",
+          "guid": "0_4d1a1cd9-8d1e-4458-82b6-c88e3ed53c23",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "JCBindiaLG_classes"
+          ]
+        },
+        {
+          "name": "TESTR5",
+          "guid": "0_e0199b0e-574e-497d-85d0-aeca92555fe6",
+          "label": "org",
+          "parentlabel": "org",
+          "type": [
+            "JCBindiaLG_data_items"
+          ]
+        },
+        {
+          "name": "REST3",
+          "guid": "0_618baa90-f6d8-4b46-9401-f1329b17aa27",
+          "label": "org",
+          "parentlabel": "org",
+          "type": [
+            "samplefordemo"
+          ]
+        },
+        {
+          "name": "JCB_test_org",
+          "guid": "0_5f9df347-5a21-4f91-8f76-123a3fbe4efb",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "DealerOrg"
+          ]
+        },
+        {
+          "name": "sample",
+          "guid": "0_9e43dbdb-b32f-4101-b8b5-2b8550f831d4",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "JCBindiaLG_classes"
+          ]
+        },
+        {
+          "name": "dhdh",
+          "guid": "0_a0bdd86a-7d3c-40e1-bde3-c700bfb9ba9a",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "JCBindiaLG_classes"
+          ]
+        },
+        {
+          "name": "East",
+          "guid": "0_defaca81-cb36-4666-87db-967452814dab",
+          "label": "org",
+          "type": [
+            "Region"
+          ]
+        },
+        {
+          "name": "Vik_NewORG",
+          "guid": "0_f7f229e5-8a36-4593-b462-9049ca08263d",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "sampledemo_002"
+          ]
+        },
+        {
+          "name": "North",
+          "guid": "0_86d8ae33-4286-4aaf-aaba-441aa8d140be",
+          "label": "org",
+          "type": [
+            "Region"
+          ]
+        },
+        {
+          "name": "org34",
+          "guid": "0_8b19bfd4-01fc-47c7-9ec9-3ec0c532aff8",
+          "label": "org",
+          "parentlabel": "org",
+          "type": [
+            "JCBindiaLG"
+          ]
+        },
+        {
+          "name": "test34",
+          "guid": "0_9c5a99ae-9e10-4e22-8c8b-57fd25aebbf3",
+          "label": "org",
+          "parentlabel": "org",
+          "type": [
+            "sample"
+          ]
+        },
+        {
+          "name": "South",
+          "guid": "0_1597e390-4b1d-46d9-bcc8-a9052570fc0e",
+          "label": "org",
+          "type": [
+            "Region"
+          ]
+        },
+        {
+          "serialNumber": "VINSUMITMITTAL2017LG",
+          "parentLabel": "Asset",
+          "registrationDate": 1513077346551,
+          "name": "VINSUMITMITTAL2017LG",
+          "guid": "0_e30b89dc-1c01-437c-8eb9-6dc8ff1a7499",
+          "location": "Bangalore",
+          "label": "asset",
+          "activationDate": 1513248263097,
+          "type": []
+        },
+        {
+          "serialNumber": "as12",
+          "parentLabel": "Asset",
+          "name": "asset2",
+          "guid": "0_8c6c9821-c025-4ad2-8256-bd26e10dce34",
+          "label": "asset",
+          "type": []
+        },
+        {
+          "serialNumber": "657",
+          "parentLabel": "Asset",
+          "name": "gdfhd",
+          "guid": "0_56a3da3a-03af-48e1-b339-d4dc467af12c",
+          "label": "asset",
+          "type": []
+        },
+        {
+          "name": "test1",
+          "guid": "0_eceb7edd-b54c-4b14-b8c6-71a84a5ae3fa",
+          "label": "org",
+          "parentlabel": "org",
+          "type": [
+            "JCBindiaLG_events"
+          ]
+        },
+        {
+          "maxAssetCount": "10000",
+          "currentAssetCountApp": 9,
+          "serialNumber": "LICENSEASSETJCB",
+          "apikey": "eb712db1-fa9a-4eba-b23c-aa4654b2aa2c",
+          "parentLabel": "Asset",
+          "name": "LICENSEASSETJCB",
+          "guid": "0_759c40bc-a9ea-45b4-b364-c801228b40fc",
+          "currentAssetCount": 5,
+          "location": "Bangalore",
+          "label": "asset",
+          "activationDate": 1512981536294,
+          "type": []
+        },
+        {
+          "name": "kk098",
+          "guid": "0_60d18a0d-ba68-4bfc-99e3-453d7e05dc6d",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "JCBindiaLG_events"
+          ]
+        },
+        {
+          "name": "test3",
+          "guid": "0_2c0ffe18-bef6-461f-a5cb-428db27ac033",
+          "label": "org",
+          "parentlabel": "org",
+          "type": [
+            "JCBindiaLG_data_items"
+          ]
+        },
+        {
+          "name": "ff",
+          "guid": "0_c644ae31-a6a8-4ae6-b473-491261b9d943",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "JCBindiaLG_classes"
+          ]
+        },
+        {
+          "serialNumber": "VINDIVYAJYOTI2017LG1",
+          "registrationDate": 1513581194555,
+          "name": "VINDIVYAJYOTI2017LG1",
+          "guid": "0_261e97a0-75b2-4f96-bb9e-f9ce2545610b",
+          "location": "Bangalore",
+          "label": "asset",
+          "activationDate": 1513251080448,
+          "type": []
+        },
+        {
+          "name": "West",
+          "guid": "0_c20ea65b-2cb8-45e1-8ffa-81160ba81200",
+          "label": "org",
+          "type": [
+            "Region"
+          ]
+        },
+        {
+          "serialNumber": "2343",
+          "parentLabel": "Asset",
+          "name": "qwtef",
+          "guid": "0_368956f9-b3d9-4415-84e7-ca8438724d37",
+          "label": "asset",
+          "type": []
+        },
+        {
+          "name": "FSV",
+          "guid": "0_2fd2aa7f-9b10-45c0-a170-3c46085e2e72",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "JCBindiaLG_classes"
+          ]
+        },
+        {
+          "name": "Vikesh_NewORG",
+          "guid": "0_c6721877-ed53-431b-96b4-0d957e578a2a",
+          "label": "org",
+          "parentlabel": "Org",
+          "type": [
+            "sampledemo_002"
+          ]
+        }
+      ],
+      "pageOffset": 30
+    },
+    "pageOffset": "-1"
+  },
+  "generateQRCode": {
+    "status": "success",
+    "result": "LtnempRh3/XKgIROJdQt0DcHv3TwNd1tfy1KSMVlvQmSD81OVmVPb89skmv6sOQ99v7TenbCPNQR5zBJmn4B9XbZmIJaMVx2wkloIskO7fkJaXWK4CdHJ8NhJglCBYhx50EX+QTJGawZ9td29ktV32jY50S2alx7ydUnxIkAZelyZxWMikg4xuxettCCx9LXLYuVdssJWO2gF+y5xv7d805Ra0shx9lxywKE0CIYpws="
+  },
+  "registerProduct": {
+    "status": "success"
+  },
+  "createAsset": {
+    "status": "success",
+    "result": [
+      {
+        "$parentId": "${guidasset}",
+        "name": "${AssetunderAssetName}",
+        "$classIds": [
+          "${guidproduct}"
+        ],
+        "type": "asset",
+        "serialNumber": "${AssetunderAssetName}"
+      }
+    ]
+  },
+  "generateNewAccountToken": {
+    "status": "success",
+    "result": "2yaLbEKwsNf50kuZAh7a4gvt8Nvsb1fChRX6kgGrBwo1RZ6eHtzog9iJgf9OT4XiDbZh+sRfaBQs9HM3MTAKpjJpwqLBU31OvvIfLq7TmnuhyF2FONdktPM4Y1+VJ/reEvDRi1jDfZA2NRYdWlPyPt3gnUOOO+7Twh12FfJVC8IZ6SRcTVlGjLBb7vu32qh0"
+  },
+  "signup": {
+    "result": [
+      {
+        "name": "Principal_JenkinsSush01",
+        "guid": "0_5493750c-44b6-4754-a748-85cd36008535",
+        "label": "principal"
+      },
+      {
+        "name": "Principal_JenkinsSush01",
+        "guid": "0_59bccd36-067a-41a9-b36f-7defaafc7252",
+        "label": "admin_unit"
+      },
+      {
+        "name": "Principal_JenkinsSush01_WiproAdmin",
+        "guid": "0_dadc21b8-2878-4aee-9d5c-3bedb1a0044c",
+        "label": "contract"
+      },
+      {
+        "name": "Principal_JenkinsSush01_org_0_5493750c-44b6-4754-a748-85cd36008535",
+        "guid": "0_898ef722-72f0-4f25-ac29-c947078327af",
+        "label": "org"
+      },
+      {
+        "name": "Principal_JenkinsSush01_actions",
+        "guid": "0_d1dbaa72-f4a2-4c90-a479-c2bbc93f0cd7",
+        "label": "class"
+      },
+      {
+        "name": "Principal_JenkinsSush01_classes",
+        "guid": "0_bf84c116-bd83-4883-ad36-e01f424df9ea",
+        "label": "class"
+      },
+      {
+        "name": "Principal_JenkinsSush01_data_items",
+        "guid": "0_0a953c43-bdf1-4244-9785-182a44a0e686",
+        "label": "class"
+      },
+      {
+        "name": "Principal_JenkinsSush01_events",
+        "guid": "0_2b593197-63e3-460b-b7aa-d009b8f57c20",
+        "label": "class"
+      },
+      {
+        "name": "Principal_JenkinsSush01_orgs",
+        "guid": "0_e192dc3c-9654-4750-a9b7-9dc1ab55caf8",
+        "label": "class"
+      },
+      {
+        "name": "Principal_JenkinsSush01_company",
+        "guid": "0_ea65a2b6-d88d-43db-8c7e-fa49f3cb1f01",
+        "label": "class"
+      },
+      {
+        "name": "Principal_JenkinsSush01_products",
+        "guid": "0_46e3a2aa-07a4-4a20-838d-f24345c469e4",
+        "label": "class"
+      },
+      {
+        "name": "Principal_JenkinsSush01_contacts",
+        "guid": "0_9add18fa-7e83-461f-be58-457b82858943",
+        "label": "class"
+      },
+      {
+        "name": "Principal_JenkinsSush01_releaseBundle",
+        "guid": "0_d2b8f011-13ec-48a8-beaf-54a1e5156bb6",
+        "label": "class"
+      },
+      {
+        "name": "Principal_JenkinsSush01_AssetDashboard",
+        "guid": "0_5442d3cc-0b27-4e0b-9422-47ccc4be0b1a",
+        "label": "contract"
+      }
+    ],
+    "status": "success"
+  },
+  "associateContract": {
+    "result": [
+      {
+        "name": "_LicenseApp",
+        "guid": "0_023d821d-c5cf-4b3c-bc97-6699b3146bb3",
+        "label": "contract"
+      }
+    ],
+    "status": "success"
+  }
+}

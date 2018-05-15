@@ -1,0 +1,22 @@
+.LeftSideNav{
+	width: 13%;
+	background: #2c3a47;
+	overflow-y: hidden;
+}
+.logoImage{
+	width: 100%;
+}
+.divliAlignment{
+	margin-left: 10%;
+}
+.LogoutliAlignment{
+	padding-top: 140%;
+}
+.logOutsideNavLiText{
+ 	color: #2fb5b6;
+	font-weight: 500;
+	margin-left: 14%;
+}
+.logOutsideNavLiText:before{
+	content: "Log Out";
+}

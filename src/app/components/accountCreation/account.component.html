@@ -1,0 +1,25 @@
+<div>
+  <left-nav></left-nav>
+</div>
+
+<div class="col s6 m6 l6">
+           <input type="submit" class="waves-effect waves-light btn hover"  (click)=" ReturnToMain()" value="Back"> 
+</div>
+
+<div class="container">
+  <input type="submit" class="waves-effect waves-light btn hover"  (click)=" ReturnToMain()" value="Back" style="margin-left: 92%;"> 
+  <div class="col s6 m4 l4 btn-createNewAccount">
+     <div class="col s2 m2 l3 data-raw-radiobtn" style="margin-top: -5%;">
+        <input class="with-gap" name="group3" type="radio" id="AccountExists" (click)="onExists()" />
+        <label for="AccountExists" class="data-dropdown-label">Account Exists</label>
+        <input class="with-gap" name="group3" type="radio" id="NewAccount" (click)="onNew()"/>
+        <label for="NewAccount" class="data-dropdown-label">New Account</label>
+     </div>
+  </div>
+  <div *ngIf = "newAccount">
+  	<create-account></create-account>
+  </div>
+  <div *ngIf = "existing">
+  	<contract-associate></contract-associate>
+  </div>
+</div>

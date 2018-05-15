@@ -1,0 +1,23 @@
+<li>
+  <div *ngIf ="isShow === false" class="col s3 m3 l3 divliAlignment">
+    <div *ngFor="let node of labelName" class="searc-view-button"(click)="ShowDropDown(node)">
+      <!-- <div *ngIf = 'isAccount' [routerLinkActive]="['active']"  [routerLink]="['/account']" >
+      </div> -->
+      <a class="sideNavLiText">
+        <span [ngClass]="'lb-' + node.label"></span>{{node.name}}
+      </a>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div *ngIf ="isShow === true" class="col s3 m3 l3 divlabelAlignment scroll">
+    <span><i class="fa fa-times cross" (click)="HideDropDown()"></i></span>
+    <span class="Label-name-block">{{ clickedLabel}}</span>
+    <div *ngFor="let node of labelName">
+      <a class="sideNavLiText">
+        <span [ngClass]="'lg-' + node.name"></span>{{node.label}}
+      </a>
+    </div>
+  </div>
+</li>

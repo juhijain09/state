@@ -1,0 +1,41 @@
+<div class="container">
+
+     <div class="row createNodeRow">
+         <div class="col s6 m6 l6">
+           <input type="submit" class="waves-effect waves-light btn hover"  (click)=" ReturnToMain()" value="Back"> 
+     </div>
+     <div class="col s4 m4 l4 push-l4">
+              <span class="createNewNodeHeading">{{currentNodeName}} </span>        
+         </div>
+     </div>  
+     
+     <!-- step 1 create new node++++++++++++++++++++++++++++++++++++++++++++++-->
+     <h3 class="step1CreateNodeHeading">Step 1: Select the type of Node</h3>       
+      <div class="step1Container">
+        <div  class="row step1ContainerRow flex-container" >
+          <div  *ngFor = "let node of NodeList" class="col s2 m2 l1 push-s1 step1RoundBtnDiv ">
+            <div [ngClass]="'roundNodeBtn-' + node.label + ' btn-floating btn-large ' + node.enable " (click) =" SelectedNodeType(node)" >{{node.label}}
+            </div>
+          <p class="btnFooterName">{{node.name}}</p>
+          </div>
+
+        </div>
+      </div>  
+      <div class="container-height"> 
+        <!-- <a routerLink="'/create/'+ label"></a> -->
+         <!--  <create-principal *ngIf="label === 'Principal'"></create-principal>
+          <create-org *ngIf="label === 'Organisation'"></create-org>
+          <create-class *ngIf ="label ==='Class'"></create-class>
+          <create-event *ngIf ="label ==='Event'"></create-event>
+          <create-adminunit *ngIf ="label ==='AdminUnit'"></create-adminunit>
+          <create-dataitem *ngIf="label === 'DataItem'"></create-dataitem>
+          <create-contracttype *ngIf ="label ==='ContractType'"></create-contracttype>
+          <create-asset *ngIf ="label ==='Asset'"></create-asset> -->
+
+      </div>
+
+</div>
+  <node-creation></node-creation>
+
+  
+   

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12 12 push-s2 push-m3 push-l3 filter-div"> 
+            <form> 
+                <div class="row" >
+
+                    <div class="col l2 filter-icon-col">        
+                         <i class="fa fa-filter fa-lg filter-icon-style" aria-hidden="true"></i>
+                         <!-- <label class="filter-label">Filter</label>    -->       
+                    </div>
+                    <div  class="col l9 filter-checkox-col">
+                        <input *ngIf = "labels.indexOf('asset') > -1 " type="checkbox" class="checkbox-Color" (change)="filterData($event, 'asset')"  value="categorya" id="filterAsset"/>
+                        <label *ngIf = "labels.indexOf('asset') > -1" class="filterChkboxLabel" for="filterAsset">Assets</label>
+
+
+                        <input *ngIf = "labels.indexOf('org') > -1" type="checkbox" class="checkbox-Color" (change)="filterData($event, 'org')"  value="categoryb" id="filterOrg" />
+                        <label *ngIf = "labels.indexOf('org') > -1" class="filterChkboxLabel" for="filterOrg">Org</label>
+
+
+                        <input *ngIf = "labels.indexOf('class') > -1" type="checkbox" class="checkbox-Color" (change)="filterData($event, 'class')" value="categoryc" id="filterClasses" />
+                        <label *ngIf = "labels.indexOf('class') > -1" class= "filterChkboxLabel" for="filterClasses">Classes</label>
+
+
+                        <input  *ngIf = "labels.indexOf('contract') > -1" type="checkbox" class="checkbox-Color" (change)="filterData($event, 'contract')" value="categoryd" id="filterContracts" />
+                        <label *ngIf = "labels.indexOf('contract') > -1" class="filterChkboxLabel" for="filterContracts">Contracts</label>
+
+
+                        <input *ngIf = "labels.indexOf('contractType') > -1" type="checkbox" class="checkbox-Color" (change)="filterData($event, 'contractType')" value="categorye" id="filterContractType" />
+                        <label *ngIf = "labels.indexOf('contractType') > -1" class="filterChkboxLabel" for="filterContractType">Contract Type</label>
+
+
+                        <input *ngIf = "labels.indexOf('persons') > -1" type="checkbox" class="checkbox-Color" (change)="filterData($event, 'persons')" value="categoryf" id="filterPerson" />
+                        <label *ngIf = "labels.indexOf('persons') > -1"   class="filterChkboxLabel" for="filterPerson">Persons</label>
+
+                        <input *ngIf = "labels.indexOf('adminUnit') > -1" type="checkbox" class="checkbox-Color" (change)="filterData($event, 'adminUnit')" value="categoryg" id="filterAdminUnits" />
+                        <label *ngIf = "labels.indexOf('adminUnit') > -1" class="filterChkboxLabel" for="filterAdminUnits">Admin Units</label>
+
+
+                        <input *ngIf = "labels.indexOf('dataItems') > -1" type="checkbox" class="checkbox-Color" (change)="filterData($event, 'dataItems')" value="categoryh" id="filterDataItems" />
+                        <label *ngIf = "labels.indexOf('dataItems') > -1" class="filterChkboxLabel" for="filterDataItems">Data Items</label>
+                    </div>
+                </div>      
+            </form>
+        </div>
+    </div>
+</div>

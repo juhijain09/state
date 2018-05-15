@@ -1,0 +1,39 @@
+<div class="container" > 
+	<h3 class="registerProductHeading">Product Registration</h3>
+    	<div class="step3Container">
+        	<div class="row step2ContainerRow">
+            	<div class="col s6 m6 l3">
+                	<p class="btnFooterName">Asset Id</p>               
+                </div>
+                 <div class="col s7 m8 l9 pull-m1">
+                 	<p class="btnFooterName">{{assetId}}</p>
+                 </div>
+            </div>
+            <div class="row step2ContainerRow">
+            	<div class="col s6 m6 l3">
+                	<p class="btnFooterName">Asset Name</p>               
+                </div>
+                <div class="col s7 m8 l9 pull-m1">
+                 	<p class="btnFooterName">{{assetName}}</p>
+                </div>
+            </div>  
+        </div>
+        <form (ngSubmit)=" registerProduct(myForm.value) " [formGroup]="myForm">
+            <div class="row step2ContainerRow">
+                <div class="col s6 m6 l3">
+                    <p class="btnFooterName">Upload Image</p>               
+                </div>
+                 <div class="col s7 m8 l9 pull-m1">
+                    <input type="file" name="pic" accept="image/*" formControlName="image">
+                 </div>
+            </div> 
+            <div class="row step2ContainerRow">
+                <div class="col s6 m5 l5 push-l8 push-m3">
+                    <button class="waves-effect waves-light btn hover" (click)=" resetForm()" value="Cancel">Cancel</button>
+                </div>
+                <div class="col s6 m5 l5 push-l5 push-m3">
+                    <input type="submit" class="waves-effect waves-light btn hover" value="Confirm"> 
+                </div>
+            </div>
+        </form>     
+</div>    

@@ -1,0 +1,78 @@
+ <div class="container-height"> 
+    <form [formGroup]="OrgForm" (ngSubmit)="createOrg(OrgForm.value)">
+    <h3 class="step1CreateNodeHeading">Step 2: Enter the Node and Classes</h3> 
+    <div class="step2Container">
+        <div class="row step2ContainerRow">
+            <div class="col s6 m6 l3">
+                <p class="btnFooterName">Current Node </p>
+             </div>
+             <div class="col s6 m6 l3 searc-view-button">
+             <div class="btnNodeTxt">
+             <span [ngClass]="'lg-' + (currentNode$ | async)?.label">{{ (currentNode$ | async)?.name}}</span>       
+          </div>
+         </div>
+        </div>
+        <div class="row step2ContainerRow">
+           
+           <div class="col s6 m6 push-m3">
+              <!-- <input id="GUID" type="text" placeholder="Enter GUID" > -->
+              <div>
+                 <div class="form-group node-treeview-guid">
+                  <ngx-treeview [config]="config" [items]="items"
+                  (selectedChange)="values = $event"
+                  (click) = "showSelectedNode()">
+                 </ngx-treeview>
+                 </div>
+              </div>
+           </div>      
+        </div>
+   <!--          <div class="row step2ContainerRow">
+          <div class="col s6 m6 l3 hide" *ngFor= "let value of values">
+                 <span (clicked)="selectClassNode(values)"></span>
+             </div>
+     </div> -->
+      <div class="row step2ContainerRow">
+        <div class="col s6 m6 l3" *ngFor= "let name of selectedNode">
+
+          <div class="editbtn editbtnOrg" >{{name}}</div>
+        </div>
+      </div>
+
+
+          <div class="row step2ContainerRow hide">
+        <div class="col s6 m6 l3" *ngFor= "let value of values">
+
+          <div class="editbtn guid" >{{value}}</div>
+        </div>
+      </div>
+     </div>
+     <h3 class="step1CreateNodeHeading">Step 3: Enter the Name and Serial Number</h3> 
+     <div class="step3Container">
+        <div class="row step2ContainerRow">
+             <div class="col s7 m8 l9">
+             <input id="GUID" type="text" placeholder="enter name for the organisation" formControlName ="name" class="text-item-color">               
+             </div>
+        </div>
+      </div>
+    <div *ngIf = "(responseError$ | async)" id="modal1">
+        <div  *ngIf = "!(model$ | async)" class="modal modal-window-style">
+          <div class="modal-content">
+            <p>{{ status }}</p>
+          </div>
+          <div  class="modal-footer modal-window-footer-style">
+            <a  class="modal-action modal-close waves-effect waves-green btn-flat" style="color:white;"(click)= 'modalclose()'>OK</a>
+          </div>
+        </div>
+      </div>
+          <div class="row step2ContainerRow">
+          <div class="col s6 m5 l5 push-l8 push-m3">
+           <button class="waves-effect waves-light btn hover" (click)=" resetForm()" value="Cancel">Cancel</button>
+          </div>
+           <div class="col s6 m5 l5 push-l5 push-m3">
+           <button type="submit" data-target='modal1' class="waves-effect waves-light btn hover" value="Confirm">CONFIRM </button>
+          </div>
+        </div>
+      </form>
+
+      </div>  
+    

@@ -1,0 +1,78 @@
+
+.popupBtn{
+  color: white!important;
+ }
+ .selectedNodeModal{
+   border-radius: 3px!important;
+   background-color: #2c3a47!important;
+   box-shadow: 0 0 4.5px 1.5px rgba(0, 0, 0, 0.5);
+   width: 22%!important;
+   right: 36%!important;
+ }
+ 
+.selectedNodeDiv{
+ 	
+ 	   background-color:#1b222c;
+     color: white;
+     font-size: 16px!important;
+     margin-top: 2%;
+     width:auto;
+ }
+
+ .selectedNodeUl{
+ 	margin-left: 15%;
+ }
+ .listItemStyle{
+ 	font-size: 16px;
+ 	padding-top: 5%;
+ }
+ .listItemStyle p{
+ 	color: white;
+ 	padding-top: 5%;
+ }
+ .listItemStyle2{
+ 	color: white;
+ 	font-size: 16px;
+ }
+ .listItemStyle2 p{
+ 	padding-top: 5%;
+ 	color: white;
+ }
+ .listItemStyle3{
+ 	color: white;
+ 	font-size: 16px;
+ }
+ .listItemStyle3 p{
+ padding-top: 5%;
+ color: white;
+ }
+ /* pop up of selected node ++++++++++++++++++++++++++++++++++++++++++++++ *
+ /* list items of node inside the popup of selected node ++++++++++++++++++++++++++++++++++++++++++++++ */
+ .listItemStyle{
+     list-style-type: disc!important;
+     color: red!important;
+     /*//font-size: large;*/
+     margin-left: 2%!important;
+     padding-top: 1%!important;
+ }
+ .listItemStyle1{
+     list-style-type: disc!important;
+     color: yellow!important;
+     /*font-size: large;*/
+     margin-left: 2%!important;
+     padding-top: 1%!important;
+ }
+ .listItemStyle2{
+     list-style-type: disc!important;
+     color: green!important;
+     /*font-size: large;*/
+     margin-left: 2%!important;
+     padding-top: 1%!important;
+ }
+ .listItemStyle3{
+     list-style-type: disc!important;
+     color: grey!important;
+     /*font-size: large;*/
+     margin-left: 2%!important;
+     padding-top: 1%!important;
+ }

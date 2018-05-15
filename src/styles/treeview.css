@@ -1,0 +1,47 @@
+.treeview-item {
+color: #26a69a;
+font-size: 20px;
+
+}
+.form-check-label{
+color: white;
+font-size: 13px;
+font-family: Roboto;
+}
+
+.form-check-label > [type="checkbox"]:checked{
+color: red;
+position: relative!important;
+opacity: 1!important;
+
+}
+.form-check-label > [type="checkbox"]:checked {
+position: absolute;
+left: 0px!important;
+opacity: 1;
+}
+.form-check-label > [type="checkbox"]:not(:checked){
+position: relative;
+left: 0px!important;
+opacity: 1;
+}
+.form-check-input + label:before{
+border: 2px solid #2fb5b6;
+background: transparent;
+opacity: 1;
+}
+.tree-children::after {
+border-left: 1px solid lightgrey;
+height: 100%;
+top: -15px;
+left: -15px;
+}
+tree-node:last-child > .tree-node > .tree-children::after {
+border-left: none;
+}
+.toggle-children {
+z-index: 1;
+}
+div.tree>tree-node>div>.node-wrapper>tree-node-expander>.toggle-children-wrapper {
+left: 22px
+}

@@ -1,0 +1,47 @@
+
+.row{
+	margin-left:-20%;
+	margin-top: 1%;
+}
+.filter-icon-col{
+ /* margin-left: 3%!important;*/
+ margin-left: 7%!important;
+}
+.filter-icon-style{
+  color: #2fb5b6;
+}
+.filter-label{
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 2%;
+}
+.filter-checkox-col{
+  margin-left: -14%!important;
+}
+.filterChkboxLabel{
+  color:#9e9e9e!important;
+  padding-left: 20px;
+  padding-right: 3%;
+}
+.checkbox-Color[type="checkbox"] + label:before{
+  border: 2px solid #2fb5b6;
+  background: transparent;
+} 
+.checkbox-Color[type="checkbox"]:checked + label:before{
+  border: 2px solid transparent;
+  border-bottom: 2px solid #2fb5b6;
+  border-right: 2px solid #2fb5b6;
+  background: transparent;
+}
+.filter-div > .checkbox-Color[type="checkbox"]:not(:checked), .filter-div > .checkbox-Color[type="checkbox"]:checked {
+  border: 2px solid transparent;
+  border-bottom: 2px solid #2fb5b6;
+  border-right: 2px solid #2fb5b6;
+  background: transparent;
+}
+@media (max-width: 480px) 
+{
+.filterChkboxLabel{
+  margin-left: 30%!important;  
+} 
+}

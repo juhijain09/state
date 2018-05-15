@@ -1,0 +1,91 @@
+     <div>
+     <form (ngSubmit)="createDataItem(DIForm.value)" [formGroup]="DIForm" >
+     <div class="step3Container">
+        <div class="row step2ContainerRow">
+             <div class="col s6 m8 l9 push-l1">
+             <input id="GUID" type="text" placeholder="enter name for the dataitem" formControlName="name" class="text-item-color" >               
+             </div>
+        </div>
+         <div class="row step2ContainerRow">
+             <div  class="col s6 m8 l3 push-l1">
+
+                  <h3 class="step1CreateNodeHeading">Select data type from dropdown</h3> 
+
+              </div>
+              <div class="col l6 push-l1">
+                  <select class="select createnode-dropdown" (change) = "SelectDIType($event.target.value)" >
+                  <option *ngFor = "let type of DataType" [selected]="type.name === 'Double'" value= {{type.id}} >
+                  {{type.name}}
+                  </option>
+                  </select>
+              </div>
+        </div>
+           <div class="row step2ContainerRow">
+           <div class="col l3 push-l1">
+           <div class="step1CreateNodeHeading">Select Aggregate Data</div>
+           </div>
+           <div class="col l6 push-l1">
+            <input type="checkbox" class="checkbox-Color" (change)="AggregateData($event.target.checked)"  value="categorya" id="AggregateData" />
+                <label class="filterChkboxLabel" for="AggregateData">AggregateData</label>
+           </div>
+           </div>
+               
+
+                <div class="row step2ContainerRow"  *ngIf = (viewAgg)>
+                   <div class="col s6 m8 l9 push-l1">
+                   <input id="min" type="number" placeholder="enter minimum value" formControlName="min" class="checkbox-Color" >
+
+                 </div>
+                  <div class="col s6 m8 l9 push-l1">
+                    <input id="max" type="number" placeholder="enter maximum value" formControlName ="max" class="checkbox-Color" > 
+                   </div>
+                    <div class="col s6 m8 l9 push-l1">
+                   <input id="mean" type="number" placeholder="enter mean value" formControlName="mean"  class="checkbox-Color"></div>            
+                        </div>
+			<!-- TODO    ===implement tree view here -->
+			  <div class="row step2ContainerRow">
+			 <div class="col s6 m9 push-l1">
+              <div>
+                 <div class="form-group">
+                  <ngx-treeview [config]="config" [items]="items"
+                  (selectedChange)="values = $event"
+                  (click) = "selectClassNode(values)">
+                 </ngx-treeview>
+                 </div>
+              </div>
+           </div>   
+           </div>  
+            <div class="row step2ContainerRow">
+             <div class="col s6 m8 l9 push-l1">
+             <input id="GUID" type="text" placeholder="Frequency of Measurement" formControlName="frequencyOfMeasurement" class="text-item-color">               
+             </div>
+              <div class="col s6 m8 l9 push-l1">
+             <input id="GUID" type="text" placeholder="Maximum Value" formControlName="maximunValue" class="text-item-color">
+             </div>
+              <div class="col s6 m8 l9 push-l1">
+             <input id="GUID" type="text" placeholder="Minimum Value" formControlName="minimumValue" class="text-item-color">
+             </div>
+             </div>
+        </div> 
+        <div *ngIf = "(responseError$ | async)" id="modal1" >
+        <div  *ngIf = "!(model$ | async)" class="modal modal-window-style">
+            <div class="modal-content">
+              <p>{{ status }}</p>
+            </div>
+            <div  class="modal-footer modal-window-footer-style">
+              <a  class="modal-action modal-close waves-effect waves-green btn-flat" style='color:white;'(click)= 'modalclose()'>OK</a>
+            </div>
+        </div>
+      </div>
+<!--     </div> -->
+        <div class="row step2ContainerRow">
+          <div class="col s6 m5 l5 push-l8 push-m3">
+           <button type="button" class="waves-effect waves-light btn hover" (click)="resetForm()" value="Cancel">Cancel</button>
+          </div>
+           <div class="col s6 m5 l5 push-l5 push-m3">
+           <button type="submit" data-target='modal1' class="waves-effect waves-light btn hover" value="Confirm"> CONFIRM </button>
+          </div>
+        </div>
+     </form>
+  </div>
+ 

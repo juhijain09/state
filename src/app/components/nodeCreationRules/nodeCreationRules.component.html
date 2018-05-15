@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="Right-nav-details" >
+    <div class="Right-panel-alignment">
+                <li>
+                <div  *ngFor = "let node of LabelArray" class="col s2 m2 l1 push-s1 step1RoundBtnDiv ">
+            <div [ngClass]="'roundNodeBtn-' + node.label + ' btn-floating btn-large ' " >{{node.label}}
+            </div>
+          <p class="btnFooterName">{{node.name}}</p>
+          </div>
+        </li>
+  </div>
+</div>

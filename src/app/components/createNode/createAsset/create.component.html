@@ -1,0 +1,12 @@
+
+  <div class="col s6 m4 l4 push-l2">
+    <div class="col s2 m2 l3 data-raw-radiobtn">
+      <input class="with-gap" name="group3" type="radio" id="LicenseAsset" (click)="createLicenseAsset()" />
+      <label for="LicenseAsset" class="data-dropdown-label">LicenseAsset</label>
+      <input class="with-gap" name="group3" type="radio" id="Asset" (click)="createAsset()"/>
+      <label for="Asset" class="data-dropdown-label">Asset</label>
+    </div>
+    <create-assets *ngIf = " isCreate"> </create-assets>
+    <create-licenseasset *ngIf = " isCreateLicense"></create-licenseasset>
+  </div> 
+

@@ -1,0 +1,103 @@
+.detail{
+  font-family: Roboto;
+  font-size: 20px;
+  text-align: left;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.node-style{
+  font-family: Roboto;
+  font-size: 15px;
+  text-align: left;
+  color: #32b5b6;
+  padding: 10px 8px 3px 0px;
+   display: inline-block;
+   font-weight: bold;
+/*  border-radius: 32px;
+  background-color: #1b222c;*/
+  margin-top: 10px;
+}
+.Right-nav-details{
+    background: #2c3a47;
+    right: 0;
+    bottom: 0;
+    top:0;
+    z-index: 1;
+    position: fixed;
+    width:14%;
+    /*overflow-y: scroll;*/
+}
+.Right-panel-alignment{
+  margin: 13% 8% 12% 13%;
+}
+.container-height{
+   height: auto;
+}
+.container{
+  padding-left: 15%;
+  width: 100%;
+  overflow-y: scroll;
+ }
+.roundNodeBtn-As{
+    content: 'As';
+    color: #fc297d;
+    font-weight: bold;
+}
+.roundNodeBtn-Cl{
+    content: 'Cl';
+    color: #fa6b41;
+    font-weight: bold;
+}
+.roundNodeBtn-Og{
+    content: 'Og';
+    color: #fecb2f;
+    font-weight: bold;
+
+}
+.roundNodeBtn-Ct{
+    content: 'C';
+    color: #4d5aff;
+    font-weight: bold;
+
+}
+.roundNodeBtn-Pn{
+    content: 'Pn';
+    color: #74d20e;
+    font-weight: bold;
+
+}
+.roundNodeBtn-Ad{
+    content: 'Ad';
+    color: #00f4ff;
+    font-weight: bold;
+
+}
+.roundNodeBtn-DI{
+    content: 'DI';
+    color: #bf55ff;
+    font-weight: bold;
+
+}
+.roundNodeBtn-Ct{
+   content: 'CT';
+    color: white;
+    font-weight: bold;
+
+}
+.roundNodeBtn-Ev{
+    content: 'Ev';
+    color: #8b572a;
+    font-weight: bold;
+
+}
+.roundNodeBtn-St{
+    content: 'St';
+    color: #43a9ff;
+    font-weight: bold;
+
+}
+.roundNodeBtn-Mp{
+    content: 'Mp';
+    color: #9b9b9b;
+    font-weight: bold;
+}

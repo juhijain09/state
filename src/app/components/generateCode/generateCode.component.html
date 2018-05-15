@@ -1,0 +1,90 @@
+ <div>
+  <left-nav></left-nav>
+ </div>
+
+ <div *ngIf="(isGenerateCodeVisible$ | async)"> 
+  <div>
+ <h1 class="step1CreateNodeHeading"> Generate QR Code</h1>
+ </div>
+    <form [formGroup]="myForm" (ngSubmit)="generateCode(myForm.value)">
+       <div class="step3Container">
+          <div class="row step2ContainerRow">
+             <div class="col s6 m6 l3">
+                <p class="btnFooterName">Principal Id</p>               
+             </div>
+             <div class="col s7 m8 l6 pull-m1">
+              <input id="principal" type="text" placeholder="enter the principal id" formControlName ="principalid" class="text-color">               
+
+             </div>
+
+             </div>
+
+
+           
+             <!-- </div> -->
+             <div class="row step2ContainerRow">
+                <div class="col s6 m6 l3">
+                  <p class="btnFooterName">Select contract type</p>
+                </div>
+                <div>
+                    <div class="col s7 m8 l6 pull-m1" >
+                        <ngx-treeview 
+                            [config]="config"
+                            [items]="items" 
+                            (selectedChange)="values = $event"
+                            (click) = "selectContractTypeNode(values)">
+                        </ngx-treeview>
+                    </div>  
+                </div>      
+             </div> 
+          </div>
+
+      <div  *ngIf = "(responseError$ | async)" id="modal1">
+        <div  *ngIf = "!(model$ | async)" class="modal modal-window-style">
+          <div class="modal-content">
+            <p>{{ status }}</p>
+          </div>
+          <div  class="modal-footer modal-window-footer-style">
+            <a  class="modal-action modal-close waves-effect waves-green btn-flat" style='color:white;' (click)= 'modalclose()'>OK</a>
+          </div>
+        </div>
+      </div> 
+     <div class="row step2ContainerRow">
+        <div class="col s6 m5 l5 push-l8 push-m3">
+          <button class="waves-effect waves-light btn hover" (click)=" resetForm()" value="Cancel">Cancel</button>
+        </div>
+        <div class="col s6 m5 l5 push-l5 push-m3">
+          <input type="submit" class="waves-effect waves-light btn hover" value="Confirm"> 
+        </div>
+     </div>
+  </form>
+</div>
+
+    <!-- <div class="col s6 m6 l3" *ngIf = "(link$ | async)?.length > 0" >
+      <p  class="btnFooterName" >Link </p>               
+    </div>
+    <div class="col s6 m6 l3" *ngIf = "(link$ | async)?.length > 0" >
+      <p>{{ qrCodoeResult }}
+      </p>
+      <!<a [ routerLink ] = [' warranty','{{ app }}','{{ brand }}','{{ sno }}','{{ tokenId }}']> link 
+      </a> -->   
+   <!--  </div> --> 
+<!-- </div> -->
+
+    <div *ngIf="(link$ | async)"  >
+        <div class="stepContainer">
+            <div class="row step2ContainerRow">
+                <div class="col l4">
+                    <qrcode [qrdata]=" qrCodoeResult " [size]="150" [level]="'Q'" style="width: 136px;height: 117px;margin-top: 1%;" > 
+                    </qrcode>
+                </div>
+                <div class="col l8">
+                        <textarea id="token" class="btnFooterName newaccount-textarea">{{ qrCodoeResult }}</textarea>
+                        <button class="copy-icon"  (click)= " copyToClipboard()" ngxClipboard  [cbContent]=" qrCodoeResult">
+                        <i class="fa fa-clone " aria-hidden="true"></i>
+                        <p class="text-item-color" style="font-size: 9px;">click to copy</p>
+                        </button>
+                 </div>
+             </div>
+        </div>
+    </div>

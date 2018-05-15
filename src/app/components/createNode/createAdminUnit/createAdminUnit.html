@@ -1,0 +1,59 @@
+   <h3 class="step1CreateNodeHeading">Step 2: Enter the Name and Details of Principal</h3>
+     <form (ngSubmit)="CreateAdminUnit(principalForm.value)" [formGroup]="principalForm" >
+    <!-- step 3 create new node++++++++++++++++++++++++++++++++++++++++++++++  -->
+      
+     <div class="step3Container">
+        <div class="row step2ContainerRow">
+             <div class="col s6 m8 l9">
+             <input id="GUID" type="text" placeholder="Enter Name for the Principal Account" formControlName="name" class="text-item-color" >               
+             </div>
+             <div class="col s6 m4 l3" style="margin-top: 1.3%;">
+               <button class="ckeckAvilbtn">Check Availability</button>             
+             </div>
+             <div class="col s6 m8 l9">
+             <input id="GUID" type="text" placeholder="Enter Principal ID" formControlName="principalId" class="text-item-color">               
+             </div>
+             <div class="col s6 m4 l3" style="margin-top: 1.3%;">
+               <button class="ckeckAvilbtn">Check Availability</button>              
+             </div>
+        </div> 
+    </div>
+     <div class="step3Container">
+     <div class="row step2ContainerRow">
+          <div class="col s6 m9">
+            <div>
+            <ngx-treeview 
+              [config]="config"
+              [items]="items" 
+              (selectedChange)="values = $event"
+              (click) = "AddOrgNodeId(values)">
+            </ngx-treeview>
+            </div>
+          </div>  
+     </div>
+         
+    <div class="col s6 m6 l3" *ngFor= "let value of values">
+             <button class="editbtn editbtnOrg" >{{value}}</button>
+    </div>
+    </div>
+    <div *ngIf = "(responseStatus$ | async)" id="modal1" class="modal">
+     <div  *ngIf = "!(model$ | async)" class="modal modal-window-style">
+        <div class="modal-content">
+          <p>{{ status }}</p>
+        </div>
+        <div  class="modal-footer modal-window-footer-style">
+          <a  class="modal-action modal-close waves-effect waves-green btn-flat" style="color:white;"(click)= 'modalclose()'>OK</a>
+        </div>
+      </div>
+     </div>
+      <div class="row step2ContainerRow">
+        <div class="col s6 m5 l5 push-l8 push-m3">
+         <button type="button" class="waves-effect waves-light btn hover" (click)="resetForm()" value="Cancel">Cancel</button>
+        </div>
+         <div class="col s6 m5 l5 push-l5 push-m3">
+         <button type="submit" data-target="modal1" class="waves-effect waves-light btn hover" value="Confirm"> CONFIRM </button>
+        </div>
+      </div>
+   </form>
+
+ 

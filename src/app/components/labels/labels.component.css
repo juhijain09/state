@@ -1,0 +1,315 @@
+.searc-view-button {
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 4px 4px;
+    text-decoration: none;
+}
+.Label-name-block{
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 4px 4px;
+    color: #fff;
+}
+.cross{
+ color: #00f4ff;
+ padding: 7px;
+ cursor: pointer;
+    }
+
+.lg-org {
+    color: #ffd100;
+    font-size: 12px;
+}
+.lg-adminUnit {
+    color: #00f4ff;
+    font-size: 12px;
+}
+.lg-principal {
+    color: #74d20e;
+    font-size: 12px;
+}
+.lg-contractType {
+    color: #b27f53;
+    font-size: 12px;
+}
+.lg-class {
+  color: #fc297d;
+  font-size: 12px;
+}
+.lg-asset {
+    color: #72bf25a6;
+    font-size: 12px;
+}
+.lg-scriptTemp{
+    color: #e75713a6;
+    font-size: 12px;
+}
+.lg-dataItem{
+    color: #bf55ff;
+    font-size: 12px;
+}
+.lg-events{
+      color: #2fb5b6;
+      font-size: 12px;
+}
+.lg-scriptTemp:before{
+     content: "ST ";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+}
+.lg-termEvent {
+    color: #72bf25a6;
+}
+.lg-productClass {
+    color: #4b6536;
+}
+.lg-termEventType {
+    color: #bf55ff;
+}
+.lg-termAction {
+    color: #bf55ff;
+}
+.lg-termService {
+    color: #bf55ff;
+}
+.lg-termActionType {
+    color: #bf55ff;
+}
+.lg-termData {
+    color: #bf55ff;
+}
+.lg-mashup {
+    color: #bf55ff;
+}
+.lg-events:before{
+     content: "Ev";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+ .lg-mashup:before{
+     content: "Ms";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+ .lg-termEvent:before{
+     content: "TEv";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+ .lg-termData:before{
+     content: "Td";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+  .lg-termActionType:before{
+     content: "TAt";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+  .lg-termAction:before{
+     content: "Ta";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+  .lg-termService:before{
+     content: "Ts";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+  .lg-termEventType:before{
+     content: "TEt";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+ .lg-productClass:before{
+     content: "Pc";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+.lg-org:before{
+     content: "Og ";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+ .lg-dataItem:before{
+     content: "DI ";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+ .lg-events:before{
+     content: "Ev ";
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+ }
+.lg-adminUnit:before{
+    content: "Ad  ";
+    font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+}
+.lg-principal:before{
+    content: "Pn ";
+    font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+}
+.lg-contractType:before{
+    content: "Ct ";
+    font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+}
+.lg-class:before{
+    content: "Cl ";
+    font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+}
+.lg-asset:before{
+    content: "As ";
+    font-family: Roboto;
+     font-size: 15px;
+     font-weight: bold;
+     text-align: left;
+     padding:10px;
+}
+.sideNavLiText{
+    color: white;
+    font-family: Roboto;
+    font-weight: 400;
+}
+.divliAlignment{
+    margin-left: 10%;
+}
+.divlabelAlignment{
+    margin-left: 5%;
+    line-height: 40px;
+}
+.lb-overview{
+   padding: 5px;
+}
+.lb-overview:before{
+   font-family: FontAwesome;
+   padding: 5px;
+   color: #2fb5b6;
+}
+.
+.lb-assoc {
+    padding: 5px;
+}
+.lb-assoc:before {
+    font-family: FontAwesome;
+    padding: 5px;
+    color: #2fb5b6;
+    content: "\f0c1";
+}
+.lb-label {
+    padding: 5px;
+}
+.lb-label:before {
+    font-family: FontAwesome;
+    color: #2fb5b6;
+    padding: 5px;
+    content: "\f02b";
+}
+.lb-account {
+   padding: 5px;
+}
+.lb-account:before {
+    font-family: FontAwesome;
+    color: #2fb5b6;
+    content: "\f2bd";
+    padding: 5px;
+}
+.lb-modules {
+    padding: 5px;
+}
+.lb-modules:before {
+    font-family: FontAwesome;
+    color: #2fb5b6;
+    padding: 5px;
+    content: "\f0e8";
+}
+.lb-upload{
+    color: #ffd100;
+    padding: 5px;
+}
+.lb-upload:before{
+    font-family: FontAwesome;
+    color: #2fb5b6;
+    padding: 5px;
+    content: "\f093";
+}
+.lb-contract {
+    color: #ffd100;
+    padding: 5px;
+}
+.lb-contract:before{
+    font-family: FontAwesome;
+    color: #2fb5b6;
+    padding: 5px;
+    content: "\f0f6";
+}
+.lb-overview{
+    padding: 5px;
+}
+.lb-overview:before{
+    font-family: FontAwesome;
+    color: #2fb5b6;
+    padding: 5px;
+    content: "\f1e5";
+}
+.scroll{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    height: 730px;
+}

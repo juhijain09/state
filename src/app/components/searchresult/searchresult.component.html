@@ -1,0 +1,22 @@
+<div class="row">
+      <div *ngIf = "(searchResult$ | async)?.length > 0" class="col s12 m12 l8 search-view-block">
+            <div class="row">
+                  <div *ngFor="let node of nodeData">
+                        <div  *ngIf="node.view" class="col m3 searc-view-button" [ngClass]="'   searc-view-button-' + node.label"  (click)="expandNode(node)">
+                              <div class="btnNodeTxt">
+                                    <span [ngClass]="'lg-' + node.label"></span>
+                                    {{node.name}}
+                                    <div class="tooltip">{{node.name}}</div>
+                              </div>
+                        </div>
+                  </div>
+
+           </div>
+      </div>
+      <div *ngIf = "(responseError$ | async)" class="col s12 m12 l8 search-view-block">
+            <div class="row">
+                  <p style='color:white;'>{{ status }} </p>
+            </div>
+      </div>
+      
+</div>

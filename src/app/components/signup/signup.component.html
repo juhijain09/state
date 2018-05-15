@@ -1,0 +1,47 @@
+<h1 class="step1CreateNodeHeading">Enter Details for Sign up</h1>
+    <form [formGroup]="myForm" (ngSubmit)="signup(myForm.value)">
+         <div class="step3Container">
+            <div class="row step2ContainerRow">
+                 <div class="col s6 m6 l3">
+                    <p class="btnFooterName">Principal Id</p>               
+                 </div>
+                 <div class="col s7 m8  pull-m1">
+                    <input id="principal" type="text" placeholder="enter principal id" formControlName ="principalId" class="text-color">               
+                 </div>
+            </div>
+            <!-- <div class="row step2ContainerRow">
+                 <div class="col s6 m6 l3">
+                    <p class="btnFooterName">Enter password</p>               
+                 </div>
+                 <div class="col s7 m8 l9 pull-m1">
+                    <input id="principal" type="password" placeholder="Enter the password" formControlName ="password">               
+                 </div>
+            </div> -->
+			<div class="row step2ContainerRow">
+                 <div class="col s6 m6 l3">
+                    <p class="btnFooterName">Account Name</p>               
+                 </div>
+                 <div class="col s7 m8  pull-m1">
+                    <input id="principal" type="text" placeholder="enter account name" formControlName ="accountName" class="text-color">               
+                 </div>
+            </div>
+            <div class="row step2ContainerRow">
+                 <div class="col s6 m6 l3">
+                    <p class="btnFooterName">Token</p>               
+                 </div>
+                 <div class="col s7 m8  pull-m1">
+                    <input id="principal" type="text" placeholder="enter token" formControlName = "token" class="text-color">               
+                 </div>
+            </div>
+
+            
+            <div class="row step2ContainerRow">
+                 <div class="col s6 m5 l5 push-l8 push-m3">
+                    <button class="waves-effect waves-light btn hover" (click)=" resetForm()" value="Cancel">Cancel</button>
+                 </div>
+                 <div class="col s6 m5 l5 push-l5 push-m3">
+                    <input type="submit" class="waves-effect waves-light btn hover" value="Confirm"> 
+                 </div>
+            </div>         
+        </div> 
+    </form>

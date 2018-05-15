@@ -1,0 +1,17 @@
+<div *ngIf="!(isCreateNodeVisible$ | async)">
+	<div *ngIf="(searchResult$ | async)?.length > 0">
+		<ng-filter></ng-filter>
+	</div>
+
+
+	<search-result
+		[nodeData]="searchResult$ | async"
+		[filterData]= "filter$ | async"
+		>
+	</search-result>
+</div>
+
+<div *ngIf="isCreateNodeVisible$ | async">
+	<create-node></create-node>
+</div>
+
